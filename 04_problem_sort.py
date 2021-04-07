@@ -31,30 +31,11 @@ import unittest
 import helper_llists as llists
 
 
-def create_linked_list(nums):
-
-    head = llists.LinkedList(nums[0])
-    tail = head
-    for i in range(1, len(nums)):
-        tail.next = llists.LinkedList(nums[i])
-        tail = tail.next
-    return head
-
-
 def sorted_linked_list(node):
     """
     Return the sorted linked list's head node
     """
-    l = []
-    while node != None:
-        l.append(node.val)
-        node = node.next
-
-    new_list = sorted(l)
-    print(new_list)
-
-    return create_linked_list(new_list)
-
+	pass
 
 class TestSortingLinkedList(unittest.TestCase):
 

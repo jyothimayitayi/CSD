@@ -58,30 +58,7 @@ def get_on_switches(node):
     """
     Return the list of switches, which are on.
     """
-    res = []
-    l = []
-    while node != None:
-        l.append(node.val)
-        node = node.next
-    # print(l)
-
-    dic = {}
-    for k in l:
-        dic[k] = l.count(k)
-    # print(dic)
-
-    new_list = []
-    for key, value in dic.items():
-        if value % 2 == 1:
-            new_list.append(key)
-    # print(new_list)
-
-    res = []
-    for i in range(len(new_list)):
-        res.append(int(math.log2(new_list[i])))
-    return(sorted(res))
-
-
+	pass
 class TestGetOnSwitches(unittest.TestCase):
 
     def test_01(self):

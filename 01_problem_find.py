@@ -31,14 +31,7 @@ def search_linked_list(node, key):
     Position starts with 1.
     Return -1, if the given key does not exists in the list.
     """
-    c = 1
-    while node != None:
-        if node.val == key:
-            return c
-        node = node.next
-        c += 1
-    return -1
-
+	pass
 
 class TestSearchLinkedList(unittest.TestCase):
 

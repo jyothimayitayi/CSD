@@ -22,22 +22,7 @@ def del_node(node, number):
     Remove the node with number, from the list
     """
 
-    temp = node
-    #val = number
-    if temp.val == number:
-        temp = temp.next
-        # return head
-    else:
-        flag = 0
-        q = temp
-        while flag == 0:
-            prev = q
-            q = q.next
-            if q.val == number:
-                prev.next = q.next
-                flag = 1
-    return temp
-
+	pass
 # DO NOT TOUCH THE BELOW CODE
 
 
